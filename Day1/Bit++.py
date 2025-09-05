@@ -1,0 +1,11 @@
+n = int(input())  # number of statements
+x = 0
+
+for _ in range(n):
+    statement = input()
+    if "++" in statement:
+        x += 1
+    elif "--" in statement:
+        x -= 1
+
+print(x)
